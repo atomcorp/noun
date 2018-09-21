@@ -15,9 +15,7 @@ module.exports = {
       {
         test: /\.(tsx?)|(js)$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-        },
+        use: {loader: 'babel-loader'},
       },
       {
         test: /\.html$/,
@@ -68,6 +66,7 @@ module.exports = {
     alias: {
       '@src': path.resolve(__dirname, 'src'),
     },
+    extensions: ['.ts', '.tsx', '.js'],
   },
   plugins: [
     new HtmlWebPackPlugin({

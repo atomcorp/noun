@@ -15,7 +15,10 @@
     // Import non-ES modules as default imports.
     "esModuleInterop": true,
     "jsx": "react",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "baseUrl": "./",
+    "rootDir": "./"
   },
   "include": ["src"]
 }
