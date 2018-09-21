@@ -7,7 +7,9 @@
     "tslint-config-prettier"
   ],
   "jsRules": {},
-  "rules": {},
+  "rules": {
+    "ordered-imports": false
+  },
   "rulesDirectory": [],
   "linterOptions": {
     "exclude": ["**/node_modules/**"]
