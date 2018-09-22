@@ -13,7 +13,7 @@ declare module 'reactjs-popup' {
     | 'bottom center';
 
   interface Props {
-    trigger: JSX.Element | ((isOpen: boolean) => JSX.Element);
+    trigger: React.ComponentType | ((isOpen: boolean) => React.ComponentType);
     open?: boolean;
     defaultOpen?: boolean;
     on?: EventType | EventType[];

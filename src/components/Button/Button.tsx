@@ -1,7 +1,7 @@
 import React from 'react';
 import withTooltip from '../../withTooltip';
 
-const Button = (props) => <button className="button">Hello</button>;
+const Button = () => <button className="button">Hello</button>;
 
 const Details = () => (
   <div>

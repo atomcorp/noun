@@ -5,23 +5,22 @@ const withTooltip = (
   WrappedComponent: React.ComponentType,
   Details: React.ComponentType
 ) => {
-  class WithTooltip extends React.Component {
+  class WithTooltip extends React.Component<{}, {}> {
+    displayName: string;
+    constructor(props: {}) {
+      super(props);
+      this.displayName = `WithSubscription(${getDisplayName(
+        WrappedComponent
+      )})`;
+    }
     public render() {
       return (
-        <Popup
-          on="hover"
-          /** tslint-disable-next-line jsx-no-lambda */
-          trigger={WrappedComponent}
-          keepTooltipInside={true}
-        >
+        <Popup on="click" trigger={WrappedComponent} keepTooltipInside={true}>
           <Details />
         </Popup>
       );
     }
   }
-  WithTooltip.displayName = `WithSubscription(${getDisplayName(
-    WrappedComponent
-  )})`;
   return WithTooltip;
 };
 
