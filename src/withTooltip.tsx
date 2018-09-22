@@ -15,7 +15,7 @@ const withTooltip = (
     }
     public render() {
       return (
-        <Popup on="click" trigger={WrappedComponent} keepTooltipInside={true}>
+        <Popup on="hover" trigger={WrappedComponent} keepTooltipInside={true}>
           <Details />
         </Popup>
       );
