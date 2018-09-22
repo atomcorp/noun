@@ -1,5 +1,19 @@
 import React from 'react';
+import withTooltip from '../../withTooltip';
 
-const Button = () => <button>Button!</button>;
+const Button = (props) => <button className="button">Hello</button>;
 
-export default Button;
+const Details = () => (
+  <div>
+    {' '}
+    WithTooltip
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    More stuff{' '}
+  </div>
+);
+
+export default withTooltip(Button, Details);
