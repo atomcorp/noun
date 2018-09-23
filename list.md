@@ -85,3 +85,14 @@ Page (Body)
 - On
 - Off
 - Error
+
+## Data structure
+
+```javascript
+  {
+    component: <Component />,
+    name: string,
+    content: string,
+    reference: Array<{link, name}>
+  }
+```

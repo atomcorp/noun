@@ -6,6 +6,7 @@ Inbox:
   ☐ add a simple page layout
 
 Later:
+  ☐ relative webpack paths and TS don't play nice (https://stackoverflow.com/a/51979881 - didn't work)
 
 Ideas:
   ☐ nouns should have permalinks

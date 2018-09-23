@@ -1,0 +1,44 @@
+body {
+  padding: 20px;
+}
+
+.page {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    'header header'
+    'main sidebar'
+    'footer footer';
+  border: 1px solid;
+}
+
+.padding {
+  padding: 20px;
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid;
+}
+
+.main {
+  grid-area: main;
+  border-right: 1px solid;
+  padding: 20px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  padding: 20px;
+}
+
+.footer {
+  grid-area: footer;
+  padding: 20px;
+  border-top: 1px solid;
+}
