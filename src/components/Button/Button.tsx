@@ -1,9 +1,9 @@
 import React from 'react';
 import withTooltip from '../../withTooltip';
 
-const Button = () => <button className="button">Hello</button>;
+export const Button = () => <button className="button">Hello</button>;
 
-const Details = () => (
+export const Details = () => (
   <div>
     {' '}
     WithTooltip

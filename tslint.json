@@ -11,7 +11,8 @@
     "ordered-imports": false,
     "interface-name": false,
     "jsx-boolean-value": false,
-    "member-access": false
+    "member-access": false,
+    "no-implicit-dependencies": [true, ["enzyme", "enzyme-adapter-react-16"]]
   },
   "rulesDirectory": [],
   "linterOptions": {
