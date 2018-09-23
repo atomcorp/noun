@@ -1,11 +1,14 @@
 import React from 'react';
 import css from './BasicPage.css';
 import Button from '../../components/Button/Button';
+import Logo from '../../components/Logo/Logo';
 
 const BasicPage = () => (
   <section className={css.page}>
     <header className={css.header}>
-      <div>NOUN</div>
+      <div>
+        <Logo />
+      </div>
       <nav>
         <a href="#">Link 1</a>
         <a href="#">Link 2</a>
