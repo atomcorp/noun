@@ -1,15 +1,15 @@
 import React from 'react';
-import Button from './components/Button/Button';
-import css from './App.css';
-const Page = () => (
-  <section className={css.page}>
-    <header>
-      <div>Logo</div>
-      <nav>Nav</nav>
-    </header>
-    <section>Body</section>
-    <Button />
+
+const App = () => (
+  <section>
+    <h1>App</h1>
+    <section>
+      <h3>Links</h3>
+      <ol>
+        <li>Link</li>
+      </ol>
+    </section>
   </section>
 );
 
-export default Page;
+export default App;

@@ -10,3 +10,5 @@ const BasicPage = () => (
     <section>Body</section>
   </section>
 );
+
+export default BasicPage;
