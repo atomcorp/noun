@@ -1,5 +1,6 @@
 import React from 'react';
 import css from './BasicPage.css';
+import Button from '../components/Button/Button';
 
 const BasicPage = () => (
   <section className={css.page}>
@@ -7,7 +8,10 @@ const BasicPage = () => (
       <div>Basic page</div>
       <nav>Nav</nav>
     </header>
-    <section>Body</section>
+    <section>
+      Body
+      <Button />
+    </section>
   </section>
 );
 
