@@ -1,15 +1,6 @@
 import React from 'react';
+import Router from './Router';
 
-const App = () => (
-  <section>
-    <h1>App</h1>
-    <section>
-      <h3>Links</h3>
-      <ol>
-        <li>Link</li>
-      </ol>
-    </section>
-  </section>
-);
+const App = () => <Router />;
 
 export default App;
