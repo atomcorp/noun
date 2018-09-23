@@ -29,3 +29,7 @@ button {
 button {
   cursor: pointer;
 }
+
+:global(#root) {
+  height: 100%;
+}

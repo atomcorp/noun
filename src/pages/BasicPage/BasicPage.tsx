@@ -2,10 +2,11 @@ import React from 'react';
 import css from './BasicPage.css';
 import Button from '../../components/Button/Button';
 import Logo from '../../components/Logo/Logo';
+import Header from '../../components/Header/Header';
 
 const BasicPage = () => (
   <section className={css.page}>
-    <header className={css.header}>
+    <Header style={css.header}>
       <div>
         <Logo />
       </div>
@@ -14,7 +15,7 @@ const BasicPage = () => (
         <a href="#">Link 2</a>
         <a href="#">Link 3</a>
       </nav>
-    </header>
+    </Header>
     <section className={css.main}>
       <h1>Content / Main</h1>
       <article>

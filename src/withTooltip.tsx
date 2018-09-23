@@ -13,9 +13,16 @@ const withTooltip = (
         WrappedComponent
       )})`;
     }
+    returnComponent = () => {
+      return <WrappedComponent {...this.props} />;
+    };
     public render() {
       return (
-        <Popup on="hover" trigger={WrappedComponent} keepTooltipInside={true}>
+        <Popup
+          on="hover"
+          trigger={this.returnComponent()}
+          keepTooltipInside={true}
+        >
           <Details />
         </Popup>
       );
