@@ -1,5 +1,6 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   devtool: 'source-map',
@@ -73,5 +74,6 @@ module.exports = {
       template: './src/index.html',
       filename: './index.html',
     }),
+    new webpack.WatchIgnorePlugin([/css\.d\.ts$/]),
   ],
 };
