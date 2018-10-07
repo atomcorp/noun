@@ -20,3 +20,5 @@ Semantic HTML
 - https://material.io/design/components/
 - http://www.carbondesignsystem.com/components/overview (IBM)
 - https://primer.style/ (GitHub)
+- https://github.com/troxler/awesome-css-frameworks
+- https://edwardtufte.github.io/tufte-css/
